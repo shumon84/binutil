@@ -1,5 +1,7 @@
 package binutil
 
+// Reader is binary read utility.
+// Note this interface is not io.Reader.
 type Reader interface {
 	Read(data interface{}) error
 	Seek(offset int64, whence int) (int64, error)
